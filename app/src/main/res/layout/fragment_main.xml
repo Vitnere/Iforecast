@@ -26,53 +26,49 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_below="@+id/editText2"
+        android:cropToPadding="false"
         android:src="@drawable/android_black" />
 
-    <TextView
+    <EditText
         android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/editText4"
-        android:layout_marginTop="42dp"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
-        android:text="Cloudly"
-        android:textAlignment="center" />
+        android:paddingLeft="55dp"
+        android:text="Cloudly" />
 
-    <TextView
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_marginEnd="13dp"
-        android:layout_marginRight="13dp"
-        android:layout_marginTop="23dp"
-        android:layout_toLeftOf="@+id/editText5"
-        android:layout_toStartOf="@+id/editText5"
-        android:ems="10"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:text="21°"
-        android:textSize="12sp" />
-
-    <TextView
+    <EditText
         android:id="@+id/editText4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_below="@+id/editText3"
-        android:layout_marginTop="13dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:ems="10"
         android:gravity="center"
         android:inputType="textPersonName"
+        android:paddingBottom="35dp"
         android:text="8°"
         android:textSize="12sp" />
 
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:paddingTop="35dp"
+        android:text="21°"
+        android:textSize="12sp" />
 </RelativeLayout>
